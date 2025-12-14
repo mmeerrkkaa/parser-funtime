@@ -33,10 +33,14 @@
       }
     }
   },
-   "keywords": [
+  "keywords": [
     "blockmine",
     "blockmine-plugin",
     "minecraft",
     "mineflayer"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmeerrkkaa/parser-funtime"
+  }
 }
