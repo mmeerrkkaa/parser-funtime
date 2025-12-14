@@ -1,0 +1,42 @@
+{
+  "name": "parser-funtime",
+  "version": "1.0.0",
+  "description": "Парсер чата для серверов FunTime. Поддерживает локальный, глобальный, клановый и приватный чаты.",
+  "main": "index.js",
+  "author": "merka",
+  "botpanel": {
+    "icon": "MessageSquare",
+    "supportedHosts": [
+      "mc.funtime.su",
+      "funtime.su"
+    ],
+    "settings": {
+      "localDelay": {
+        "type": "number",
+        "label": "Задержка локального чата (мс)",
+        "default": 3000
+      },
+      "globalDelay": {
+        "type": "number",
+        "label": "Задержка глобального чата (мс)",
+        "default": 3000
+      },
+      "clanDelay": {
+        "type": "number",
+        "label": "Задержка кланового чата (мс)",
+        "default": 500
+      },
+      "privateDelay": {
+        "type": "number",
+        "label": "Задержка приватного чата (мс)",
+        "default": 3000
+      }
+    }
+  },
+   "keywords": [
+    "blockmine",
+    "blockmine-plugin",
+    "minecraft",
+    "mineflayer"
+  ]
+}
