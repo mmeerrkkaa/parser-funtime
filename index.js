@@ -1,8 +1,8 @@
 
 function parseUsername(text) {
     const words = text.split(/\s+/);
-    for (const word of words) {
-        const cleaned = word.replace(/^[^a-zA-Z0-9_]+|[^a-zA-Z0-9_]+$/g, '');
+    for (let i = words.length - 1; i >= 0; i--) {
+        const cleaned = words[i].replace(/^[^a-zA-Z0-9_]+|[^a-zA-Z0-9_]+$/g, '');
         if (/^[a-zA-Z0-9_]{3,16}$/.test(cleaned)) {
             return cleaned;
         }
@@ -19,7 +19,6 @@ module.exports = (bot, options) => {
         log('[FunTimeParser] Старый обработчик удалён');
     }
 
-    // Регистрация типов чатов
     bot.messageQueue.registerChatType('chat', { prefix: '', delay: settings.localDelay || 3000 });
     bot.messageQueue.registerChatType('global', { prefix: '!', delay: settings.globalDelay || 3000 });
     bot.messageQueue.registerChatType('clan', { prefix: '/cc ', delay: settings.clanDelay || 500 });
