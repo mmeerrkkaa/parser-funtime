@@ -1,6 +1,6 @@
 {
   "name": "parser-funtime",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Парсер чата для серверов FunTime. Поддерживает локальный, глобальный, клановый и приватный чаты.",
   "main": "index.js",
   "author": "merka",
